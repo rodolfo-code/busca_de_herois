@@ -2,7 +2,7 @@
 import React, { useContext } from 'react';
 import * as S from './styles';
 
-import iconCriar from '../../../assets/icone_criar.svg';
+import iconCriar from '../../../../public/icone_criar.svg';
 import FormModal from './formModal';
 import * as B from '../../Button';
 import ModalContext from '../../../contexts/modalContext/Context';

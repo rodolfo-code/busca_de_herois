@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useContext } from 'react';
 
-import iconSad from '../../../assets/icon-sad.svg';
+import iconSad from '../../../../public/icon-sad.svg';
 import ModalContext from '../../../contexts/modalContext/Context';
 
 import * as B from '../../Button';

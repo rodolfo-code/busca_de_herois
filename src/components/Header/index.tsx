@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchBar from './searchBar';
 import * as S from './styles';
-import logo_impar from '../../assets/logo-teste.svg';
+import logo_impar from '../../../../public/logo-teste.svg';
 
 const Header = () => {
   return (

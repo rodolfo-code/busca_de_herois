@@ -5,7 +5,7 @@ import { input, KeyDown } from '../../../types/character';
 import * as S from './styles';
 import AppContext from '../../../contexts/apiContext/Context';
 
-import lupa from '../../../assets/lupa.svg';
+import lupa from '../../../../public/lupa.svg';
 
 const SearchBar = () => {
   const { setSearchTerm } = useContext(AppContext);

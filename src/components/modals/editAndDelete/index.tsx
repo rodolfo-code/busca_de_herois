@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import * as B from '../../Button';
 import * as S from './styles';
 
-import iconTrash from '../../../assets/Icon-trash.svg';
+import iconTrash from '../../../../public/Icon-trash.svg';
 import ModalContext from '../../../contexts/modalContext/Context';
 
 const EditAndDeleteModal = () => {

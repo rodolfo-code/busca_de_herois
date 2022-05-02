@@ -5,8 +5,8 @@ import * as S from './styles';
 import * as B from '../../../Button';
 import { CharProps } from '../../../../types/character';
 
-import trashIcon from '../../../../public/Icon-trash.svg';
-import editIcon from '../../../../public/Icon-edit.svg';
+import trashIcon from '../../../../../public/Icon-trash.svg';
+import editIcon from '../../../../../public/Icon-edit.svg';
 import ModalContext from '../../../../contexts/modalContext/Context';
 
 const Card = ({ character: { name, thumbnail } }: CharProps) => {

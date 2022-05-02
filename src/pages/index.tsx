@@ -6,6 +6,7 @@ import Main from '../components/Main';
 import CardViewer from '../components/contents/cardViewer';
 
 export default function Home() {
+console.log('oi')
   return (
     <Layout>
       <Header />

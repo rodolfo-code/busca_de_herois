@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <S.Container>
       <S.LogoContainer>
-        <Image src={logo_impar} width={192.03} alt="logo impar" />
+        <Image src={logo_impar} width={192.03} layout="fill" alt="logo impar" />
       </S.LogoContainer>
 
       <SearchBar />

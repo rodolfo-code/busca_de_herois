@@ -11,7 +11,6 @@ const hash = md5(ts + privateKey + publicKey);
 
 function useFetch(searchTerm: string | null) {
   const [data, setData] = useState<Character[]>([]);
-  console.log(data)
 
   const charName = searchTerm && `nameStartsWith=${searchTerm}&`;
 

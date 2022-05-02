@@ -4,12 +4,13 @@ import React from 'react';
 import SearchBar from './searchBar';
 import * as S from './styles';
 import logo_impar from '../../../public/logo-teste.svg';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <S.Container>
       <S.LogoContainer>
-        <img src={logo_impar} alt="logo impar" />
+        <Image src={logo_impar} width={192.03} alt="logo impar" />
       </S.LogoContainer>
 
       <SearchBar />

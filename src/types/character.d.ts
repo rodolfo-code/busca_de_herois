@@ -19,10 +19,11 @@ export interface ButtonStyled {
 export interface CharProps {
   character: {
     name: string;
-    thumbnail: {
-      extension: string;
-      path: string;
-    };
+    // thumbnail: {
+    //   extension: string;
+    //   path: string;
+    // };
+    images: {};
   };
 }
 

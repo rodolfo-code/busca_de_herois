@@ -8,7 +8,7 @@ import * as S from './styles';
 
 const CardViewer = (props) => {
   const { characters: data } = useContext(AppContext);
-  console.log(JSON.stringify(props, null, 4));
+  console.log(data);
 
   return (
     <>

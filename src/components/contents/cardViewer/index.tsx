@@ -6,21 +6,15 @@ import ContainerHeader from './header';
 
 import * as S from './styles';
 
-const CardViewer = () => {
+const CardViewer = (props) => {
   const { characters: data } = useContext(AppContext);
-
-  useEffect(() => {
-    axios
-      .get(
-        'https://api.giphy.com/v1/gifs/search?q=cats&api_key=im1W89xJPwYw9XkaiNxMYCS2AZGPsOzp&limit=16',
-      )
-      .then((resp) => console.log(resp));
-  }, []);
+  console.log(JSON.stringify(props, null, 4));
 
   return (
     <>
       <ContainerHeader />
       <S.Container>
+        {/* <pre>{JSON.stringify(props, null, 4)}</pre> */}
         {data ? (
           data.map((char) => {
             return <Card key={char.id} character={char} />;
@@ -34,3 +28,11 @@ const CardViewer = () => {
 };
 
 export default CardViewer;
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      PRIVATE_KEY: 'process.env.PRIVATE_KEY',
+    },
+  };
+}

@@ -9,15 +9,15 @@ import trashIcon from '../../../../../public/Icon-trash.svg';
 import editIcon from '../../../../../public/Icon-edit.svg';
 import ModalContext from '../../../../contexts/modalContext/Context';
 
-const Card = ({ character: { name, thumbnail } }: CharProps) => {
+const Card = ({ character: { name, images, thumbnail } }: CharProps) => {
   const { handleDeleteModal, handlePopup } = useContext(ModalContext);
 
-  const imagePath = `${thumbnail.path}/landscape_large.${thumbnail.extension}`;
+  // const imagePath = `${thumbnail.path}/landscape_large.${thumbnail.extension}`;
 
   return (
     <S.Container>
       <S.CardContent>
-        <img src={imagePath} alt="" />
+        <img src={images.original.url} alt="" />
         <span>
           <hr />
           {name}

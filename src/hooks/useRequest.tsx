@@ -19,19 +19,13 @@ function useFetch(searchTerm: string | null) {
 
   const charName = searchTerm && `nameStartsWith=${searchTerm}&`;
 
-  useEffect(() => {
-    axios
-      .get(
-        'https://api.giphy.com/v1/gifs/search?q=cats&api_key=im1W89xJPwYw9XkaiNxMYCS2AZGPsOzp&limit=16',
-      )
-      .then((resp) => setData(resp.data.data));
-  }, []);
 
-  // useEffect(() => {
-  //   api
-  //     .get(`characters?${charName}ts=${ts}&apikey=${publicKey}&hash=${hash}`)
-  //     .then(({ data }) => setData(data.data.results));
-  // }, [charName]);
+
+   useEffect(() => {
+     api
+       .get(`characters?${charName}ts=${ts}&apikey=${publicKey}&hash=${hash}`)
+       .then(({ data }) => setData(data.data.results));
+   }, [charName]);
 
   return data;
 }

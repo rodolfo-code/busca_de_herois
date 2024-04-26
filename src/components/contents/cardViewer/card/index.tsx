@@ -11,7 +11,6 @@ import ModalContext from "../../../../contexts/modalContext/Context";
 
 const Card = ({ character: { thumbnail } }) => {
   const { handleDeleteModal, handlePopup } = useContext(ModalContext);
-
   const imagePath = `${thumbnail.path}/landscape_large.${thumbnail.extension}`;
 
   return (

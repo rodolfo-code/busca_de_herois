@@ -1,20 +1,18 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { ButtonStyled } from '../../types/character';
+import { ButtonStyled } from "../../types/character";
 
-export const Button = styled('button')<ButtonStyled>`
-  border: ${(props) => (props.secondary ? `1px solid ${props.color}` : 'none')};
+export const Button = styled("button")<ButtonStyled>`
+  border: ${(props) => (props.secondary ? `1px solid ${props.color}` : "none")};
   border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
 
-  background-color: ${(props) =>
-    props.secondary ? '#FFFFFF' : `${props.color}`};
-  color: ${(props) => (props.secondary ? `${props.color}` : '#FFFFFF')};
-  height: ${(props) => (props.height ? `${props.height}px` : '48px')};
-  width: ${(props) => (props.width ? `${props.width}px` : '165px')};
-  box-shadow: 0px 3px 6px
-    ${(props) => (props.secondary ? '#E763162E' : '#92207242')};
+  background-color: ${(props) => (props.secondary ? "#FFFFFF" : `${props.color}`)};
+  color: ${(props) => (props.secondary ? `${props.color}` : "#FFFFFF")};
+  height: ${(props) => (props.height ? `${props.height}px` : "48px")};
+  width: ${(props) => (props.width ? `${props.width}px` : "165px")};
+  box-shadow: 0px 3px 6px ${(props) => (props.secondary ? "#E763162E" : "#92207242")};
 `;
 
 export const CloseButton = styled.button`
@@ -37,6 +35,8 @@ export const CloseButton = styled.button`
 `;
 
 export const EditAndDeleteButton = styled.button`
+  display: flex;
+  align-items: center;
   background: transparent;
   border: none;
   display: flex;

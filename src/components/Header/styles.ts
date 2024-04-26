@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import banner from '../../assets/fundo-busca.png';
+import banner from "../../assets/fundo-busca.png";
 
 export const Container = styled.div`
   background: url(${banner});

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React from "react";
 
-import SearchBar from './searchBar';
-import * as S from './styles';
-import logo_impar from '../../../public/logo-teste.svg';
-import Image from 'next/image';
+import SearchBar from "./searchBar";
+import * as S from "./styles";
+import logo_impar from "../../../public/logo-teste.svg";
+import Image from "next/image";
 
 const Header = () => {
   return (

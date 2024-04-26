@@ -1,9 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { input, KeyDown } from "../../../types/character";
 import * as S from "./styles";
 import AppContext from "../../../contexts/apiContext/Context";
+
+import { CiSearch } from "react-icons/ci";
+import axios from "axios";
+import { Console } from "console";
 
 // import lupa from '../../../../public/lupa.svg';
 
@@ -33,7 +37,10 @@ const SearchBar = () => {
   return (
     <S.Container>
       <S.Input type="text" placeholder="Digite aqui sua busca" onChange={handleChange} onKeyDown={handleKeyDown} value={inputValue} />
-      <button onClick={handleClick}>{/* <img src={lupa} alt="imagem do botao de pesquisa" /> */}</button>
+      <button onClick={handleClick}>
+        <CiSearch size={35} />
+        {/* <img src={lupa} alt="imagem do botao de pesquisa" /> */}
+      </button>
     </S.Container>
   );
 };

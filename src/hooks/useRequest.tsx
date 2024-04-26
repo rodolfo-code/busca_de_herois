@@ -5,11 +5,11 @@ import api from "../services/api";
 import { Character } from "../types/character";
 import axios from "axios";
 
-const privateKey = "4cef92361db7b134f2ee1ad11942a18d01ebf2ac";
-const publicKey = "0a76e512fa01c6e213eef9f6773f30d3";
+// const privateKey = "4cef92361db7b134f2ee1ad11942a18d01ebf2ac";
+// const publicKey = "0a76e512fa01c6e213eef9f6773f30d3";
 const ts = Number(new Date());
-// const privateKey = process.env.PRIVATE_KEY;
-// const publicKey = process.env.PUBLIC_KEY;
+const privateKey = process.env.PRIVATE_KEY;
+const publicKey = process.env.PUBLIC_KEY;
 
 const hash = md5(ts + privateKey + publicKey);
 

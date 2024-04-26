@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import { Layout } from '../styles/pages/Layout';
-import Header from '../components/Header';
-import Main from '../components/Main';
-import CardViewer from '../components/contents/cardViewer';
+import { Layout } from "../styles/pages/Layout";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import CardViewer from "../components/contents/cardViewer";
 
 export default function Home(props) {
   return (
     <Layout>
       <Header />
-      <pre>{JSON.stringify(props, null, 4)}</pre>
+      {/* <pre>{JSON.stringify(props, null, 4)}</pre> */}
       <Main>
         <CardViewer />
       </Main>

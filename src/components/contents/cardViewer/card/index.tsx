@@ -1,26 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import * as S from './styles';
-import * as B from '../../../Button';
-import { CharProps } from '../../../../types/character';
+import * as S from "./styles";
+import * as B from "../../../Button";
+import { CharProps } from "../../../../types/character";
 
-import trashIcon from '../../../../../public/Icon-trash.svg';
-import editIcon from '../../../../../public/Icon-edit.svg';
-import ModalContext from '../../../../contexts/modalContext/Context';
+import trashIcon from "../../../../../public/Icon-trash.svg";
+import editIcon from "../../../../../public/Icon-edit.svg";
+import ModalContext from "../../../../contexts/modalContext/Context";
 
-// { character: { name, images } }: CharProps
-
-const Card = ({ character }) => {
+const Card = ({ character: { thumbnail } }) => {
   const { handleDeleteModal, handlePopup } = useContext(ModalContext);
 
-  // const imagePath = `${thumbnail.path}/landscape_large.${thumbnail.extension}`;
-  console.log(character.images);
+  const imagePath = `${thumbnail.path}/landscape_large.${thumbnail.extension}`;
 
   return (
     <S.Container>
       <S.CardContent>
-        <img src={character.images.original.url} alt="" />
+        <img src={imagePath} alt="" />
         <span>
           <hr />
           {/* {name} */}

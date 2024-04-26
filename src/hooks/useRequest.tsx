@@ -22,9 +22,9 @@ function useFetch(searchTerm: string | null) {
     api.get(`characters?${charName}ts=${ts}&apikey=${publicKey}&hash=${hash}`).then(({ data }) => setData(data.data.results));
   }, [charName]);
 
-  useEffect(() => {
-    api.get(`characters/1017100?${charName}ts=${ts}&apikey=${publicKey}&hash=${hash}`).then(({ data }) => console.log(`BLABLABLABLA`, data));
-  }, [charName]);
+  // useEffect(() => {
+  //   api.get(`characters/1017100?${charName}ts=${ts}&apikey=${publicKey}&hash=${hash}`).then(({ data }) => console.log(`hero data`, data));
+  // }, [charName]);
 
   return data;
 }

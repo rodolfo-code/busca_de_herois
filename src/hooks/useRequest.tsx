@@ -18,9 +18,6 @@ function useFetch(searchTerm: string | null) {
 
   const charName = searchTerm && `nameStartsWith=${searchTerm}&`;
 
-  console.log("privateKey", privateKey);
-  console.log("publicKey", publicKey);
-
   useEffect(() => {
     api.get(`characters?${charName}ts=${ts}&apikey=${publicKey}&hash=${hash}`).then(({ data }) => setData(data.data.results));
   }, [charName]);

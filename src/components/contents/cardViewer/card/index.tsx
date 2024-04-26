@@ -5,8 +5,8 @@ import * as S from "./styles";
 import * as B from "../../../Button";
 import { CharProps } from "../../../../types/character";
 
-import trashIcon from "../../../../../public/Icon-trash.svg";
-import editIcon from "../../../../../public/Icon-edit.svg";
+// import trashIcon from "../../../../../public/Icon-trash.svg";
+// import editIcon from "../../../../../public/Icon-edit.svg";
 import ModalContext from "../../../../contexts/modalContext/Context";
 
 const Card = ({ character: { thumbnail } }) => {
@@ -24,12 +24,12 @@ const Card = ({ character: { thumbnail } }) => {
       </S.CardContent>
       <S.CardFooter>
         <B.EditAndDeleteButton onClick={handleDeleteModal}>
-          <img src={trashIcon} alt="Icone Excluir" />
+          {/* <img src={trashIcon} alt="Icone Excluir" /> */}
           <p>Excluir</p>
         </B.EditAndDeleteButton>
 
         <B.EditAndDeleteButton onClick={handlePopup}>
-          <img src={editIcon} alt=" icone editar" />
+          {/* <img src={editIcon} alt=" icone editar" /> */}
           <p>Editar</p>
         </B.EditAndDeleteButton>
       </S.CardFooter>

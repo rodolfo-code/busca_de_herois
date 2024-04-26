@@ -9,7 +9,6 @@ export default function Home(props) {
   return (
     <Layout>
       <Header />
-      {/* <pre>{JSON.stringify(props, null, 4)}</pre> */}
       <Main>
         <CardViewer />
       </Main>

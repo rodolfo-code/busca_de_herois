@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useContext } from 'react';
-import * as B from '../../Button';
-import * as S from './styles';
+import React, { useContext } from "react";
+import * as B from "../../Button";
+import * as S from "./styles";
 
-import iconTrash from '../../../../public/Icon-trash.svg';
-import ModalContext from '../../../contexts/modalContext/Context';
+// import iconTrash from '../../../../public/Icon-trash.svg';
+import ModalContext from "../../../contexts/modalContext/Context";
 
 const EditAndDeleteModal = () => {
   const { handleDeleteModal, handlePopup } = useContext(ModalContext);
@@ -14,9 +14,7 @@ const EditAndDeleteModal = () => {
       <S.Modal>
         <B.CloseButton onClick={handleDeleteModal}>X</B.CloseButton>
         <S.Main>
-          <S.ImageContainer>
-            <img src={iconTrash} alt="" />
-          </S.ImageContainer>
+          <S.ImageContainer>{/* <img src={iconTrash} alt="" /> */}</S.ImageContainer>
           <S.Text>Excluir</S.Text>
           <S.Text>CERTEZA QUE DESEJA EXCLUIR?</S.Text>
         </S.Main>

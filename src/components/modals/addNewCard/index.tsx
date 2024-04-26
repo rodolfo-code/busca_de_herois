@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useContext } from 'react';
-import * as S from './styles';
+import React, { useContext } from "react";
+import * as S from "./styles";
 
-import iconCriar from '../../../../public/icone_criar.svg';
-import FormModal from './formModal';
-import * as B from '../../Button';
-import ModalContext from '../../../contexts/modalContext/Context';
+// import iconCriar from '../../../../public/icone_criar.svg';
+import FormModal from "./formModal";
+import * as B from "../../Button";
+import ModalContext from "../../../contexts/modalContext/Context";
 
 const AddNewCardModal = () => {
   const { handleFormModal } = useContext(ModalContext);
@@ -19,7 +19,7 @@ const AddNewCardModal = () => {
       <S.Modal>
         <B.CloseButton onClick={handleOpenModal}>X</B.CloseButton>
         <S.ModalHeader>
-          <img src={iconCriar} alt="Icone criar card" />
+          {/* <img src={iconCriar} alt="Icone criar card" /> */}
           <p>Criar card</p>
         </S.ModalHeader>
         <FormModal />
